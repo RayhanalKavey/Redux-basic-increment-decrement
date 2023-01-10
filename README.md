@@ -4,9 +4,10 @@
 
 - Action creator is a pure function, which creates action.
 - Reusable, portable and easy to test
-- action=> index.js
 
 ```
+action=> index.js
+
 export const incNumber = (num) => {
  return {
    type: "INCREMENT",
@@ -43,6 +44,7 @@ export default changeTheNumber;
 
 ```
 reducer->In index
+
 import changeTheNumber from "./increaseDecrease";
 import { combineReducers } from "redux";
 
@@ -59,6 +61,8 @@ export default rootReducer;
 - Every redux store has a single root reducer function.
 
 ```
+store.js
+
 Import {createStore} from ‘redux’;
 Const store = createStore(rootReducers);
 store.js
@@ -80,3 +84,14 @@ export default store;
 ## Install
 
 Npm i redux react-redux
+
+## Relevant Resources
+
+- [Redux official Website](https://redux.js.org/introduction/installation).
+- [Redux Chrome extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en).
+- [Redux extension GitHub-To makes chrome extension workable follow the instruction to copy text to the store.](https://github.com/reduxjs/redux-devtools/tree/main/extension#installation).
+
+## Live Link
+
+- Increment value 5 and decrement value 1 are set to the application.
+- [Test Live](https://redux-increment-decrement.netlify.app/).
